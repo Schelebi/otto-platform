@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-11-24 13:01:28",
+  "total_time": 19.22997522354126,
+  "success_rate": 0.0,
+  "results": [
+    {
+      "name": "GitHub Durum Kontrol",
+      "status": "❌",
+      "duration": 0.05540323257446289,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "Değişiklikleri Ekle",
+      "status": "❌",
+      "duration": 0.05540323257446289,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "Commit Oluştur",
+      "status": "❌",
+      "duration": 0.04841136932373047,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "GitHub Push",
+      "status": "❌",
+      "duration": 0.038956642150878906,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "API Sağlık Test",
+      "status": "❌",
+      "duration": 0.03726482391357422,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "Vercel Deploy",
+      "status": "❌",
+      "duration": 0.03774833679199219,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "Build Kontrol",
+      "status": "❌",
+      "duration": 0.044385433197021484,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    },
+    {
+      "name": "Environment Kontrol",
+      "status": "❌",
+      "duration": 0.042897939682006836,
+      "steps": 1,
+      "retries": 3,
+      "error": "> was unexpected at this time.\n"
+    }
+  ]
+}
