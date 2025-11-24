@@ -1,4 +1,6 @@
-import { apiClient } from './apiClient';
+#!/usr/bin/env python3
+
+api_service_content = '''import { apiClient } from './apiClient';
 
 const API_BASE_URL = 'https://ottomans.onrender.com';
 
@@ -58,4 +60,9 @@ export const apiService = {
   }
 };
 
-export default apiService;
+export default apiService;'''
+
+with open("src/services/apiService.ts", "w", encoding="utf-8") as f:
+    f.write(api_service_content)
+
+print("✅ apiService.ts düzeltildi")
