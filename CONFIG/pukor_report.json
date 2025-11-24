@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-11-24 13:38:24",
+  "error_analysis": {
+    "class": "SERVICE",
+    "severity": "HIGH",
+    "description": "Backend servisi çalışmıyor veya yanıt vermiyor",
+    "solution_path": "RESTART_SERVICE"
+  },
+  "success": false,
+  "precautions": [
+    "Render auto-restart ayarları kontrol edilmeli",
+    "Health check endpoint'i eklenmeli"
+  ],
+  "total_time": 190.96257638931274
+}

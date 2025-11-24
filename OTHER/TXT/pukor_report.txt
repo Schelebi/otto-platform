@@ -1,0 +1,18 @@
+
+🚨 PUKOR DÖNGÜSÜ RAPORU
+==================================================
+
+TARİH: 2025-11-24 13:38:24
+HATA SINIFI: SERVICE
+ŞİDDET: HIGH
+AÇIKLAMA: Backend servisi çalışmıyor veya yanıt vermiyor
+ÇÖZÜM YOLU: RESTART_SERVICE
+
+SONUÇ: ❌ BAŞARISIZ
+SÜRE: 190.96s
+
+ÖNLEMLER:
+• Render auto-restart ayarları kontrol edilmeli
+• Health check endpoint'i eklenmeli
+
+==================================================
