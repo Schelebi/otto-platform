@@ -1,56 +1,59 @@
-import { requestJson, buildUrl } from './apiClient';
+import { apiClient } from './apiClient';
 
 const API_BASE_URL = 'https://ottomans.onrender.com';
 
 export const apiService = {
   async getCities() {
     try {
-      const response = await requestJson(`${API_BASE_URL}/api/cities`);
+      const response = await apiClient.get(\\/api/cities\);
       return response;
     } catch (error) {
       console.error('Cities API error:', error);
-      throw new Error('Ýller yüklenemedi');
+      throw new Error('Ä°ller yÃ¼klenemedi');
     }
   },
 
   async getServices() {
     try {
-      const response = await requestJson(`${API_BASE_URL}/api/services`);
+      const response = await apiClient.get(\\/api/services\);
       return response;
     } catch (error) {
       console.error('Services API error:', error);
-      throw new Error('Hizmetler yüklenemedi');
+      throw new Error('Hizmetler yÃ¼klenemedi');
     }
   },
 
   async searchFirms(params: any) {
     try {
-      const url = buildUrl(`${API_BASE_URL}/api/firms/search`, params);
-      const response = await requestJson(url);
+      const url = new URL(\\/api/firms/search\);
+      Object.entries(params).forEach(([key, value]) => {
+        if (value) url.searchParams.append(key, String(value));
+      });
+      const response = await apiClient.get(url.pathname + url.search);
       return response;
     } catch (error) {
       console.error('Firms search API error:', error);
-      throw new Error('Firmalar yüklenemedi');
+      throw new Error('Firmalar yÃ¼klenemedi');
     }
   },
 
   async getFirmById(id: string) {
     try {
-      const response = await requestJson(`${API_BASE_URL}/api/firms/${id}`);
+      const response = await apiClient.get(\\/api/firms/\\);
       return response;
     } catch (error) {
       console.error('Firm detail API error:', error);
-      throw new Error('Firma detayý yüklenemedi');
+      throw new Error('Firma detayÄ± yÃ¼klenemedi');
     }
   },
 
   async getFirmsByCity(city: string) {
     try {
-      const response = await requestJson(`${API_BASE_URL}/api/firms/by-city/${city}`);
+      const response = await apiClient.get(\\/api/firms/by-city/\\);
       return response;
     } catch (error) {
       console.error('City-based firms API error:', error);
-      throw new Error('Þehre göre firmalar yüklenemedi');
+      throw new Error('Åžehre gÃ¶re firmalar yÃ¼klenemedi');
     }
   }
 };
