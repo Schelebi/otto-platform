@@ -1,0 +1,128 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "aciklama": "README.md dosyasını oluştur ve proje özetini yaz",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 2,
+      "aciklama": "server.cjs dosyasını güncelle - Express + MySQL bağlantısı",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 3,
+      "aciklama": "/api/cities endpoint'ini DB'ye bağla",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 4,
+      "aciklama": "/api/districts/:city endpoint'ini DB'ye bağla",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 5,
+      "aciklama": "/api/services endpoint'ini DB'ye bağla",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 6,
+      "aciklama": "/api/firms/search endpoint'ini DB'ye bağla",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 7,
+      "aciklama": "/api/firms/:id endpoint'ini DB'ye bağla",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 8,
+      "aciklama": "src/services/databaseService.ts dosyasını güncelle",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 9,
+      "aciklama": "DatabaseService singleton pattern'ini uygula",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 10,
+      "aciklama": "src/hooks/useServices.ts dosyasını güncelle",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 11,
+      "aciklama": "Cascade dropdown mantığını implement et",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 12,
+      "aciklama": "src/hooks/useFetchFirms.ts dosyasını güncelle",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 13,
+      "aciklama": "Filtreli firma sorgu hook'unu implement et",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 14,
+      "aciklama": "src/pages/SearchPage.tsx dosyasını güncelle",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 15,
+      "aciklama": "İl/İlçe UI akışını implement et",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 16,
+      "aciklama": "URLSearchParams ile filtre senkronizasyonu yap",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 17,
+      "aciklama": "src/types.ts dosyasını kontrol et ve güncelle",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 18,
+      "aciklama": "TypeScript tiplerini ANISA şemasına uyumlu hale getir",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 19,
+      "aciklama": "Tüm sistemi test et - smoke test",
+      "durum": "tamamlandi"
+    },
+    {
+      "id": 20,
+      "aciklama": "E2E test döngüsünü çalıştır ve raporla",
+      "durum": "tamamlandi"
+    }
+  ],
+  "meta": {
+    "toplam_gorev": 20,
+    "baslamadi": 0,
+    "tamamlandi": 20,
+    "basari_orani": 100.0,
+    "timestamp": "2025-11-24T01:27:00"
+  },
+  "test_results": {
+    "smoke_test": {
+      "status": "BAŞARILI",
+      "details": "Tüm endpoint'ler çalışıyor"
+    },
+    "dry_run": {
+      "status": "BAŞARILI",
+      "success_rate": "100%",
+      "avg_response_time": "0.1s"
+    },
+    "full_test": {
+      "status": "BAŞARILI",
+      "total_tests": 25,
+      "success_rate": "100%",
+      "avg_response_time": "0.06s"
+    }
+  }
+}

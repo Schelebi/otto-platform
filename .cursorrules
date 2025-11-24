@@ -1,0 +1,59 @@
+# 🔴 OTTO PROJE KURALLARI - KASKAD MENÜ MANTIĞI
+
+## 📊 VERİTABANI YAPISI
+- Tablo: anisa (Tek tablo, denormalize, JOIN yok)
+- İlişki: il_id -> ilce (Parent -> Child)
+- Kritik Kural: İlçe verisi asla bağımsız yüklenemez
+- Sorgu Mantığı: SELECT DISTINCT ilce FROM anisa WHERE il_id = ? (number)
+
+## 🚨 GERÇEK VERİTABANI BAĞLANTI BİLGİLERİ
+- Host: 35.214.224.135
+- Port: 3306
+- User: uwcw1gm1sor8u
+- Password: g05jkizfzjdp
+- Database: db6ctx4kvleywe
+- Table: anisa
+
+## 🔴 KASKAD (ZİNCİRLEME) MENÜ MANTIĞI
+1. ADIM: "İl" dropdown'ı benzersiz şehirlerle dolar (SELECT DISTINCT il FROM anisa)
+2. ADIM: Kullanıcı il seçtiğinde, "İlçe" dropdown'ı anında güncellenir
+3. ADIM: İlçe menüsü yalnızca seçili il'e ait ilçeleri gösterir
+4. KISITLAMA: İl seçilmeden ilçe dropdown'ı pasif durumda kalır
+5. AKIŞ: Hizmetler + İl + İlçe -> Filtrelenmiş Firma Sonuçları
+
+## 💻 GELİŞTİRME PRENSİPLERİ
+- Kod yazarken her zaman önce "İl" verisinin seçili olup olmadığını kontrol et
+- Eğer il seçili değilse "İlçe" dropdown'ını pasif bırak veya boşalt
+- useServices hook'unda loadDistricts() fonksiyonu sadece cityId parametresiyle çağrılır
+- SearchPage.tsx'de handleFilterChange() fonksiyonu cityId değiştiğinde districtId'yi sıfırlar
+- Backend API'leri anisa tablosundan doğrudan veri çeker, placeholder kullanılmaz
+
+## 🎯 TEKNİK KISITLAMALAR
+- SELECT DISTINCT kullanımı zorunludur
+- .env bilgileri yerine gerçek kimlik bilgileri kullanılır
+- Timeout handling (10s cities/services, 15s firms search)
+- Error handling ile fallback veriler
+- AbortSignal timeout ile request iptali
+
+## 📁 ÖNCELİKLİ DOSYA YOLLARI
+- src/services/databaseService.ts (Veritabanı mantığı)
+- src/hooks/useServices.ts (Frontend state management)
+- src/pages/SearchPage.tsx (UI kaskad mantığı)
+- src/types.ts (TypeScript tipleri)
+- src/vite-env.d.ts (Vite environment)
+
+## 🔄 İŞ AKIŞI
+1. Kullanıcı arama sayfasını açar
+2. "İl" dropdown'ı anisa tablosundan benzersiz şehirlerle dolar
+3. Kullanıcı bir il seçer (örn: "Adana")
+4. "İlçe" dropdown'ı anında Adana'nın ilçeleriyle dolar (Seyhan, Çukurova vb.)
+5. Kullanıcı hizmet ve ilçe seçer
+6. Arama butonuna basar
+7. Nihai sorgu: SELECT * FROM anisa WHERE hizmet = ? AND il = ? AND ilce = ?
+
+## ⚠️ KRİTİK UYARILAR
+- Hiçbir zaman ilçe verisini bağımsız olarak çekme
+- Dropdown'ları her zaman parent-child ilişkisine göre yönet
+- UI state'i ile backend state'i senkron tut
+- Error handling ile kullanıcıyı bilgilendir
+- Loading states ile kullanıcı deneyimini iyileştir

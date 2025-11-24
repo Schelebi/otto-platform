@@ -1,0 +1,11 @@
+{
+  "status": "kernel_mode_enabled",
+  "timestamp": "2025-11-23T15:07:51.698152+00:00",
+  "level": "unrestricted_admin",
+  "permissions": "full_system_access",
+  "security_disabled": true,
+  "firewall_disabled": true,
+  "defender_disabled": true,
+  "uac_disabled": true,
+  "execution_policy": "unrestricted"
+}

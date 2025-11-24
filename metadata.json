@@ -1,0 +1,7 @@
+{
+  "name": "OTTO - Oto Kurtarma Platformu",
+  "description": "Türkiye geneli oto çekici ve kurtarma firmaları veritabanı. En yakın çekiciyi bulun.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

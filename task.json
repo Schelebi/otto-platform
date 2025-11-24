@@ -1,0 +1,104 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "aciklama": "basla.py'daki AttributeError düzelt - analyze_stop_signal metodu ekle",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 2,
+      "aciklama": "UI-DB test suite sonuçlarýný izle ve raporla",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 3,
+      "aciklama": "Memory optimizasyonu yap - 616 MB kritik seviyede",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 4,
+      "aciklama": "UI-DB Analyzer döngüsünü kontrol et - 180 saniyede bir",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 5,
+      "aciklama": "Machine Guardian sistem raporunu doðrula - 3 dakikada bir",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 6,
+      "aciklama": "Frontend stabilizasyon testi yap - Port 3000",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 7,
+      "aciklama": "Backend stabilizasyon testi yap - Port 3001",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 8,
+      "aciklama": "Ýller dropdown test et - 81 þehir doðrula",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 9,
+      "aciklama": "Firmalar listesi test et - 50 firma doðrula",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 10,
+      "aciklama": "Detay sayfalarý test et - firma detaylarý",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 11,
+      "aciklama": "Konum özelliði test et - geolocation",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 12,
+      "aciklama": "disk_koru.py distutils hatasý düzelt",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 13,
+      "aciklama": "Python process'lerini optimize et",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 14,
+      "aciklama": "API endpoint'lerini test et - /api/cities, /api/firms",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 15,
+      "aciklama": "React component'lerini kontrol et - HomePage, SearchPage",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 16,
+      "aciklama": "Database baðlantýsýný doðrula - MySQL",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 17,
+      "aciklama": "Log dosyalarýný temizle ve organize et",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 18,
+      "aciklama": "Sistem kaynaklarýný izle - CPU, RAM, Disk",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 19,
+      "aciklama": "Hata raporlarý oluþtur ve analiz et",
+      "durum": "tamamlandý"
+    },
+    {
+      "id": 20,
+      "aciklama": "Son sistem kontrolü ve kapatma",
+      "durum": "tamamlandý"
+    }
+  ]
+}

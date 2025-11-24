@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "firma_id": 101,
+    "firma_adi": "Ankara Hızır Oto Kurtarma",
+    "il_id": 6,
+    "il": "Ankara",
+    "ilce_id": 601,
+    "ilce": "Çankaya",
+    "hizmetler": "Oto Çekici, Yol Yardım",
+    "telefon": "+90 312 123 45 67",
+    "phones_json": ["+90 532 111 22 33"],
+    "adres_full": "Çukurambar Mah. 1400. Sok. No:10",
+    "puan": 4.8,
+    "yorum_sayisi": 128,
+    "lat": 39.903,
+    "lng": 32.858,
+    "aktif": 1,
+    "featured_image": "https://picsum.photos/seed/otto1/800/600"
+  },
+  {
+    "id": 2,
+    "firma_id": 205,
+    "firma_adi": "İzmir 7/24 Yol Destek",
+    "il_id": 35,
+    "il": "İzmir",
+    "ilce_id": 3506,
+    "ilce": "Konak",
+    "hizmetler": "Akü Takviye, Lastik Değişimi",
+    "telefon": "+90 232 555 66 77",
+    "phones_json": {
+      "phones": ["+90 505 222 33 44"],
+      "whatsapp": "+90 505 222 33 44"
+    },
+    "adres_full": "Alsancak Mah. 1474 Sok. No:4",
+    "puan": 4.5,
+    "yorum_sayisi": 64,
+    "lat": 38.433,
+    "lng": 27.141,
+    "aktif": 1,
+    "featured_image": "https://picsum.photos/seed/otto2/800/600"
+  }
+]

@@ -1,0 +1,122 @@
+===========================================
+🔍 MANUEL SİSTEM DURUM RAPORU
+===========================================
+
+TARİH: 2025-11-23 21:40:00
+DURUM: SİSTEM STABİL VE ÇALIŞIYOR
+
+===========================================
+🌐 SERVİS DURUMU
+===========================================
+
+✅ FRONTEND (Port 3000)
+- Durum: Çalışıyor (PID: 17072)
+- Erişim: ✅ HTML yüklenebiliyor
+- Bağlantı: 6 active connection
+
+✅ BACKEND (Port 3001)
+- Durum: Çalışıyor (PID: 1113 - yeniden başlatıldı)
+- Cities API: ✅ 81 şehir döndürüyor
+- Firms API: ✅ 50+ firma verisi döndürüyor
+
+===========================================
+📊 API TEST SONUÇLARI
+===========================================
+
+🟢 /api/cities
+- HTTP Status: 200 OK
+- Veri Sayısı: 81 şehir
+- Format: JSON (id, name, slug)
+- Örnek: Adana, Adıyaman, Afyonkarahisar...
+
+🟢 /api/firms
+- HTTP Status: 200 OK
+- Veri Sayısı: 50+ firma
+- Format: JSON (id, name, phone, rating...)
+- Örnek: Ozdemiryol Yardım, Bigakurtarici...
+
+===========================================
+💾 SİSTEM KAYNAKLARI
+===========================================
+
+RAM Durumu:
+- Toplam: 7.878 MB
+- Mevcut: 433 MB (%5.5 - KRİTİK!)
+- Virtual: 2.335 MB mevcut
+
+Process Durumu:
+- Python process: 6 adet çalışıyor
+- En yüksek memory: 51.284 K (PID: 18784)
+- UI-DB test suite: Arka planda aktif
+
+===========================================
+🚨 KRİTİK UYARILAR
+===========================================
+
+⚠️ RAM KRİTİK SEVİYEDE
+- Mevcut RAM: 433 MB (%5.5)
+- Önceki: 485 MB → 433 MB (düşüş devam ediyor)
+- Öneri: Gereksiz process'leri sonlandır
+
+⚠️ PYTHON PROCESS YOĞUNLUĞU
+- 6 Python process çalışıyor
+- Memory kullanımı yüksek
+- UI-DB test suite devam ediyor
+
+===========================================
+🔧 PERFORMANS OPTİMİZASYONLARI
+===========================================
+
+✅ Yapılanlar:
+- Backend yeniden başlatıldı (PID: 2156 → 1113)
+- API endpoint'ler doğrulandı
+- Port bağlantıları stabil
+
+🔄 Devam Eden:
+- UI-DB test suite çalışıyor (PID: 1091)
+- Machine Guardian aktif
+- Memory optimizasyonu gerekli
+
+===========================================
+📋 CODEX SORUNU ANALİZİ
+===========================================
+
+❌ Asıl Sorun: Yetki Kısıtlaması DEĞİL
+✅ Gerçek Durum: Tam yetki var
+- Python çalıştırabiliyor
+- Dosya yazabiliyor
+- Komut çalıştırabiliyor
+
+❌ Asıl Sorun: Tool Call Hatası
+- command_status'a numeric ID gönderiliyor
+- String ID gönderilmesi gerekiyor
+- Bu yüzden UI-DB sonuçları izlenemiyor
+
+===========================================
+🎯 ÖNCELİKLİ EYLEMLER
+===========================================
+
+1. 🚨 HEMEN YAPILACAK:
+   - Gereksiz Python process'lerini sonlandır
+   - RAM kullanımını optimize et
+   - UI-DB test suite sonuçlarını izle
+
+2. 📈 KISA VADE:
+   - Tool call hatasını düzelt
+   - Memory monitoring'i güçlendir
+   - Sistem performansını izle
+
+3. 🔧 UZUN VADE:
+   - Otomatik memory management
+   - Process optimizasyonu
+   - Sistem stabilizasyonu
+
+===========================================
+🏁 SONUÇ
+===========================================
+
+Sistem çalışıyor ancak RAM kritik seviyede.
+Codex'in çalışmama sebebi yetki değil, tool call hatası.
+ANISA rehberi stabil ve API'ler çalışıyor.
+
+ACİL İHTİYAÇ: Memory optimizasyonu!

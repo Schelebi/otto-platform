@@ -1,0 +1,106 @@
+{
+  "debug.node.autoAttach": "off",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.console": "integratedTerminal",
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-chrome": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe"
+  },
+  "debug.javascript.browser": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe",
+  "debug.openDebug": "neverOpen",
+  "debug.javascript.chrome.enabled": false,
+  "debug.javascript.firefox.enabled": false,
+  "debug.javascript.edge.enabled": false,
+  "debug.javascript.safari.enabled": false,
+  "debug.javascript.opera.enabled": false,
+  "debug.javascript.defaultBrowser": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe",
+  "debug.javascript.debugByLinkOptions": {
+    "browserLaunchLocation": "workspace",
+    "openMode": "newTab"
+  },
+  "debug.terminal.clearBeforeReusing": true,
+  "debug.allowBreakpointsEverywhere": false,
+  "debug.onTaskErrors": "debugAnyway",
+  "debug.inlineEditor": "never",
+  "debug.hideLauncherWhileDebugging": true,
+  "debug.disableAll": true,
+  "debug.disableDebuggerOnStartup": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "browser.defaultUrl": "about:blank",
+  "browser.enableLinks": false,
+  "browser.linux.executable": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe",
+  "browser.windows.executable": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe",
+  "browser.macos.executable": "C:\\\\Program Files\\\\BraveSoftware\\\\Brave-Browser\\\\Application\\\\brave.exe",
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "selection",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html"
+  },
+  "otto.project.database": {
+    "type": "mysql",
+    "host": "35.214.224.135",
+    "port": 3306,
+    "database": "db6ctx4kvleywe",
+    "table": "anisa",
+    "connection": "real"
+  },
+  "otto.project.cascade": {
+    "enabled": true,
+    "parent": "il",
+    "child": "ilce",
+    "rule": "il_required_for_ilce"
+  },
+  "otto.project.priority": {
+    "files": [
+      "src/services/databaseService.ts",
+      "src/hooks/useServices.ts",
+      "src/pages/SearchPage.tsx",
+      "src/types.ts",
+      "src/vite-env.d.ts"
+    ]
+  },
+  "otto.project.context": "Kaskad (Zincirleme) Açılır Menü Mantığı - MySQL anisa tablosu entegrasyonu",
+  "otto.project.description": "İl seçilmeden ilçe seçilemez, parent-child ilişki zorunlu, SELECT DISTINCT kullanılır",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.shell.windows": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe",
+  "workbench.editor.showTabs": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "update.mode": "manual"
+}

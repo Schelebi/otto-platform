@@ -1,0 +1,80 @@
+<!--
+  KOD ADI: ROOT HTML SHELL — ANISA READY
+  KOD YOLU (GÖRELİ): public/index.html
+
+  KODUN AMACI (5):
+  1) React uygulamasının kök HTML kabuğunu stabil ve hızlı başlatmak.
+  2) Leaflet CSS’i her zaman yükleyerek harita bozulmasını engellemek.
+  3) Tailwind tema renklerini tek merkezden tanımlamak.
+  4) Mobil viewport’u tüm cihazlarda kusursuz görünüm için ayarlamak.
+  5) index.css bağlantısını zorunlu şekilde ekleyip global stil vermek.
+
+  REVİZYONLAR:
+  - REVİZYON NO: 2 bu sayfada yapıldı → viewport + theme-color + leaflet css garanti edildi.
+
+  TALİMATLAR (ZORUNLU):
+  - index.css mutlaka yüklenir.
+  - Leaflet CSS integrity + crossorigin ile yüklenir.
+  - importmap bağımlılıkları bozulmadan korunur.
+-->
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>OTTO - Türkiye Oto Kurtarma</title>
+    <meta
+      name="description"
+      content="En yakın oto çekici ve oto kurtarma firmalarını bulun."
+    />
+    <meta name="theme-color" content="#e11d48" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Leaflet CSS (ZORUNLU) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#fff1f2',
+                100: '#ffe4e6',
+                500: '#f43f5e',
+                600: '#e11d48',
+                700: '#be123c',
+              },
+              secondary: {
+                900: '#0f172a',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Importmap (Studio generated) -->
+    
+
+    <!-- Global CSS (ZORUNLU) -->
+    <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+  <body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
